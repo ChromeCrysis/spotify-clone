@@ -1,0 +1,113 @@
+[
+    {
+        "title": "Seus podcasts mais escutados",
+        "itens": [
+            {
+                "photo": "",
+                "subtitle": {
+                    "title": "Coder's Gate",
+                    "description": "Episódios de Podcast escolhidos por você"
+                }
+                
+            },
+        {
+            "photo": "",
+            "subtitle": {
+                "title": "Flow Podcast",
+                "description": "Episódios de Podcast escolhidos por você"
+            }
+            
+        },
+        {
+            "photo": "",
+            "subtitle": {
+                "title": "Super Fantástico",
+                "description": "Episódios de Podcast escolhidos por você"
+            }
+            
+        },
+        {
+            "photo": "",
+            "subtitle": {
+                "title": "PodPah",
+                "description": "Episódios de Podcast escolhidos por você"   
+            }
+            
+        }
+    ]
+    },
+    {
+        "title": "Não saem dos seus ouvidos",
+        "itens": [
+            {
+                "photo": "",
+                "subtitle": {
+                    "title": "Jinjer - Who is Gonna Be The One",
+                    "description": "Napalm Records - 2017"
+                }
+                
+            },
+        {
+            "photo": "",
+            "subtitle": {
+                "title": "Slipknot - Unsainted",
+                "description": "Roadrunner Records - 2018"
+            }
+            
+        },
+        {
+            "photo": "",
+            "subtitle": {
+                "title": "Angra - Black Widows Web ft. Alissa White Gluz and Sandy",
+                "description": "Lançamento 2019"
+            }
+            
+        },
+        {
+            "photo": "",
+            "subtitle": {
+                "title": "O Rapaa - Pescador de Ilusões",
+                "description": "O Rappa Mundi - 1997"   
+            }
+            
+        }
+    ]
+    },
+    {
+        "title": "Mais ouvidas no Brasil",
+        "itens": [
+            {
+                "photo": "",
+                "subtitle": {
+                    "title": "Adam Lambert - Running",
+                    "description": "Napalm Records - 2017"
+                }
+                
+            },
+        {
+            "photo": "",
+            "subtitle": {
+                "title": "Slipknot - Unsainted",
+                "description": "Roadrunner Records - 2018"
+            }
+            
+        },
+        {
+            "photo": "",
+            "subtitle": {
+                "title": "Angra - Black Widows Web ft. Alissa White Gluz and Sandy",
+                "description": "Lançamento 2019"
+            }
+            
+        },
+        {
+            "photo": "",
+            "subtitle": {
+                "title": "O Rapaa - Pescador de Ilusões",
+                "description": "O Rappa Mundi - 1997"   
+            }
+            
+        }
+    ]
+    }
+]
