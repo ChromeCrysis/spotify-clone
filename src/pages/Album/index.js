@@ -21,16 +21,18 @@ import {
   MusicListening,
   MusicTime,
   GroupAllMusic,
-  ContainerScrollView
+  ContainerScrollView,
 } from "./styles";
 
-import Icon from "react-native-vector-icons/FontAwesome5";
+import Player from "../Player/player";
 
+import Icon from "react-native-vector-icons/FontAwesome5";
 import musics from "./musics.json";
 import { TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 const Musics = () => {
+  const navigation = useNavigation();
   let [iconConfigure] = useState({
     size: 20,
     color: "#fff",
@@ -38,16 +40,18 @@ const Musics = () => {
   return (
     musics &&
     musics.map((music, index) => (
-      <Music key={index++}>
-        <GroupAllMusic>
-          <MusicNumber>{index++}</MusicNumber>
-          <GroupMusic>
-            <MusicName>{music.name}</MusicName>
-            <MusicListening>{music.listening}</MusicListening>
-          </GroupMusic>
-          
-        </GroupAllMusic>
-        <MusicTime>{music.duration}</MusicTime>
+      
+        <Music key={index++}>
+          <TouchableOpacity onPress={() => navigation.navigate('Player')}>
+          <GroupAllMusic>
+            <MusicNumber>{index++}</MusicNumber>
+            <GroupMusic>
+              <MusicName>{music.name}</MusicName>
+              <MusicListening>{music.listening}</MusicListening>
+            </GroupMusic>
+          </GroupAllMusic>
+          </TouchableOpacity>
+          <MusicTime>{music.duration}</MusicTime>
           <Icon
             name="ellipsis-v"
             {...iconConfigure}
@@ -55,7 +59,8 @@ const Musics = () => {
               padding: 10,
             }}
           />
-      </Music>
+        </Music>
+     
     ))
   );
 };
@@ -71,8 +76,8 @@ const Album = () => {
       <ContainerHead>
         <Photo />
         <ContainerNavBar>
-        <TouchableOpacity onPress={() => navigation.goBack()}>
-          <Icon name="arrow-left" {...iconConfigure} />
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <Icon name="arrow-left" {...iconConfigure} />
           </TouchableOpacity>
           <GroupItemNavbar>
             <TouchableOpacity>

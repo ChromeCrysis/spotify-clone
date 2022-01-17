@@ -7,6 +7,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Main from "./src/pages/Main/main";
 import TabBar from "./src/components/TabBar";
 import Album from "./src/pages/Album";
+import Player from "./src/pages/Player/player"
 
 const Stack = createNativeStackNavigator();
 
@@ -19,9 +20,7 @@ export default function App() {
           component={Main}
           options={{
             title: "",
-            headerStyle: {
-              backgroundColor: "#111",
-            },
+            headerShown: false
           }}
         />
         <Stack.Screen
@@ -29,9 +28,15 @@ export default function App() {
           component={Album}
           options={{
             title: "",
-            headerStyle: {
-              backgroundColor: "#111",
-            },
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="Player"
+          component={Player}
+          options={{
+            title: "",
+            headerShown: false,
           }}
         />
       </Stack.Navigator>

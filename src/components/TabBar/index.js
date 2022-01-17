@@ -6,7 +6,7 @@ import Main from "../../pages/Main/main";
 import Icon from "react-native-vector-icons/FontAwesome5";
 
 const TabBar = () => {
-    const navigation = useNavigation();
+  const navigation = useNavigation();
   const [iconConfigure] = useState({
     color: "#fff",
     size: 25,
@@ -20,7 +20,6 @@ const TabBar = () => {
             <ActionName>Buscar</ActionName>
           </TouchableOpacity>
         </GroupAction>
-
         <GroupAction>
         <TouchableOpacity onPress={() => navigation.navigate('Main')}>
             <Icon name="home" {...iconConfigure} />
